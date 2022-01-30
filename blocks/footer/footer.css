@@ -1,0 +1,27 @@
+.footer {
+  margin: 64px 16px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (min-width: 480px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin: 88px 24px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    margin: 92px 48px 24px;
+  }
+}
