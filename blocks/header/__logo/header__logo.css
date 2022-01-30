@@ -2,6 +2,7 @@
   width: 142px;
   height: 42px;
   display: block;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
