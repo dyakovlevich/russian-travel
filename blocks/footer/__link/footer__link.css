@@ -3,6 +3,11 @@
   color: #fff;
   font-size: 24px;
   line-height: 24px;
+  transition: linear .5s;
+}
+
+.footer__link:hover {
+  opacity: .8;
 }
 
 @media (min-width: 480px) {
