@@ -5,6 +5,7 @@
   letter-spacing: 2px;
   color: #aaa;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
