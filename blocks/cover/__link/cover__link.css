@@ -1,0 +1,29 @@
+.cover__link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  gap: 16px;
+  /*   Отношение высоты к ширине изображения - line-height title * количество строк - line-height subtitle * количество строк - gap / 2 (паддинги с 2 сторон)*/
+  padding: calc((62.5% - 35px*2 - 16px*3 - 16px)/2) 0;
+  
+  background-size: cover;
+  background-position: center;
+  /*   Изображение для всех браузеров */
+  background-image: url('../../../images/cover-trains.jpg');
+  /*   Для тех браузеров кто сможет отобразить градиент (hex to rgb: #2A2C2F -> rgb(42,44,47)) */
+  background-image: linear-gradient(rgba(42,44,47, 0.3) , rgba(42,44,47, 0.3)), url('../../../images/cover-trains.jpg');
+}
+
+.cover__link:hover {
+  background-image: linear-gradient(rgba(42,44,47, 0.8) , rgba(42,44,47, 0.8)), url('../../../images/cover-trains.jpg');
+}
+
+@media (min-width: 768px) {
+  .cover__link {
+    gap: 32px;
+    padding: calc((62.5% - 76px*2 - 22px*3 - 32px)/2) 0;
+  }
+}
